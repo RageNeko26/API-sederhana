@@ -1,6 +1,4 @@
-# Project Title
-
-Membuat API sederhana
+# Membuat API sederhana
 
 ## API Reference
 
