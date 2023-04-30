@@ -1,8 +1,11 @@
-var express = require('express');
-var router = express.Router();
+// Improving syntax
+import express from 'express';
+
+/* Should not use "var" to declare a variable */
+const router = express.router(); 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res, next) => {
   res.render('index', { title: 'Express' });
 });
 
