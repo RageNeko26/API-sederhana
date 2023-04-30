@@ -1,13 +1,22 @@
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+/*
+@Changes made by Ridho 20223
+Improving syntax from old style javascript to ECMA 6
+ */
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var productRouter = require('./routes/product');
+// Main modules
+import express from 'express';
+import path from 'path';
+import cookieParser from 'cookie-parser';
+import logger from 'morgan';
 
-var app = express();
+
+// Route files
+import indexRouter from './routes/index.js';
+import usersRouter from './routes/users.js';
+import productRouter from './routes/product.js';
+
+// Initialize Express JS
+const app = express();
 require('dotenv').config()
 
 app.use(logger('dev'));
