@@ -1,13 +1,14 @@
-var express = require('express');
-var router = express.Router();
-const Validator = require('fastest-validator');
+import express from 'express';
+import Validator from 'fastest-validator';
+
+const router = express.Router();
 
 const {product} = require('../models');
 const v = new Validator();
 
 router.get('/', async(req, res) => {
     const p = await product.findAll();
-    return  res.send(p);
+    return res.send(p);
 })
 
 router.get('/:id', async(req, res) => {
