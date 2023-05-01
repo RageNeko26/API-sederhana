@@ -3,9 +3,11 @@
 Improving syntax from old style javascript to ECMA 6
  */
 
+// NodeJS Built-in Module
+const path = require('path')
+
 // Main modules
 import express from 'express';
-import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
